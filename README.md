@@ -1,0 +1,2 @@
+# gsp
+Global Smash Power
