@@ -7,7 +7,7 @@
 
 <p>
   <strong>Picture:</strong>
-  <%= @character.picture %>
+  <%= image_tag(@idea.picture_url, width: 600) if @idea.picture.present? %>
 </p>
 
 <%= link_to 'Edit', edit_character_path(@character) %> |
