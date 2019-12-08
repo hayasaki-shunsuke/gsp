@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :results
   devise_for :users
   get 'pages/info'
   resources :characters
