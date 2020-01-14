@@ -1,0 +1,2 @@
+class ResultFight < ApplicationRecord
+end

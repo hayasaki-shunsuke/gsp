@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>User:</strong>
+  <%= @result_fight.user_id %>
+</p>
+
+<p>
+  <strong>My fighter:</strong>
+  <%= @result_fight.my_fighter %>
+</p>
+
+<p>
+  <strong>Rival fighter:</strong>
+  <%= @result_fight.rival_fighter %>
+</p>
+
+<p>
+  <strong>Game result:</strong>
+  <%= @result_fight.game_result %>
+</p>
+
+<p>
+  <strong>Global smash power:</strong>
+  <%= @result_fight.global_smash_power %>
+</p>
+
+<%= link_to 'Edit', edit_result_fight_path(@result_fight) %> |
+<%= link_to 'Back', result_fights_path %>
