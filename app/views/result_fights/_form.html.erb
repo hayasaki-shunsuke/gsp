@@ -18,12 +18,12 @@
 
   <div class="field">
     <%= form.label :my_fighter %>
-    <%= form.number_field :my_fighter %>
+    <%= form.collection_select :my_fighter, Character.all, :id, :name %>
   </div>
 
   <div class="field">
     <%= form.label :rival_fighter %>
-    <%= form.number_field :rival_fighter %>
+    <%= form.collection_select :rival_fighter, Character.all, :id, :name %>
   </div>
 
   <div class="field">
