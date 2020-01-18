@@ -28,7 +28,7 @@
 
   <div class="field">
     <%= form.label :game_result %>
-    <%= form.number_field :game_result %>
+    <%= form.select :game_result, [['win', 1], ['lost', 2], ['even', 0]], {}, { id: "game_result"} %>
   </div>
 
   <div class="field">
