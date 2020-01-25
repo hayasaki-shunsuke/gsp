@@ -4,7 +4,7 @@ class ResultFightsController < ApplicationController
   # GET /result_fights
   # GET /result_fights.json
   def index
-    @result_fights = ResultFight.all
+    @result_fights = ResultFight.where(user_id: current_user.id)
   end
 
   # GET /result_fights/1

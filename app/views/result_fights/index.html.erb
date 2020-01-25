@@ -5,7 +5,6 @@
 <table>
   <thead>
     <tr>
-      <th>ユーザー</th>
       <th>自分のキャラクター</th>
       <th>相手のキャラクター</th>
       <th>勝敗</th>
@@ -17,7 +16,6 @@
   <tbody>
     <% @result_fights.each do |result_fight| %>
       <tr>
-        <td><%= result_fight.user_id %></td>
         <td><%= result_fight.my_fighter %></td>
         <td><%= result_fight.rival_fighter %></td>
         <td><%= result_fight.game_result %></td>
