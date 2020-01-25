@@ -12,8 +12,9 @@
   <% end %>
 
   <div class="field">
-    <strong>相手のキャラクター</strong>
-    <%= form.number_field :user_id %>
+    <%= form.label :user_id %>
+    <strong><%= current_user.email %></strong>
+    <%= form.hidden_field :user_id, :value => current_user.id %>
   </div>
 
   <div class="field">
