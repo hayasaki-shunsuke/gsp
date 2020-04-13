@@ -1,6 +1,5 @@
 Rails.application.routes.draw do
   resources :result_fights
-  resources :results
   devise_for :users
   get 'pages/info'
   resources :characters
