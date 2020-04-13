@@ -1,9 +1,9 @@
 p#notice
   = notice
 h1
-  | Characters
-table
-  thead
+  | キャラクター
+table.table.table-hover
+  thead.thead-default
     tr
       th
         | Name
@@ -13,15 +13,9 @@ table
   tbody
     - @characters.each do |character|
       tr
-        td
-          = character.name
-        td
-          = character.picture
-        td
-          = link_to 'Show', character
-        td
-          = link_to 'Edit', edit_character_path(character)
-        td
-          = link_to 'Destroy', character, method: :delete, data: { confirm: 'Are you sure?' }
-br
+        td= character.name
+        td= character.picture
+        td= link_to 'Show', character, class: 'btn btn-primary mr-3'
+        td= link_to 'Edit', edit_character_path(character), class: 'btn btn-primary mr-3'
+        td= link_to 'Destroy', character, method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-danger mr-3'
 = link_to 'New Character', new_character_path

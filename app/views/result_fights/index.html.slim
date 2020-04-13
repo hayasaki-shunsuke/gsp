@@ -1,7 +1,7 @@
 p#notice= notice
 h1 世界戦闘力
-table
-  thead
+table.table.table-hover
+  thead.thead-default
     tr
       th 自分のキャラクター
       th 相手のキャラクター
@@ -15,7 +15,7 @@ table
         td= result_fight.rival_fighter
         td= result_fight.game_result
         td= result_fight.global_smash_power
-        td= link_to 'Show', result_fight
-        td= link_to 'Edit', edit_result_fight_path(result_fight)
-        td= link_to 'Destroy', result_fight, method: :delete
+        td= link_to 'Show', result_fight, class: 'btn btn-primary mr-3'
+        td= link_to 'Edit', edit_result_fight_path(result_fight), class: 'btn btn-primary mr-3'
+        td= link_to 'Destroy', result_fight, method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-danger mr-3'
 = link_to 'New Result Fight', new_result_fight_path
