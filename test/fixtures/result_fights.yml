@@ -1,15 +1,29 @@
 # Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
-one:
+result_fight1:
   user_id: 1
   my_fighter: 1
-  rival_fighter: 1
+  rival_fighter: 2
   game_result: 1
-  global_smash_power: 1
+  global_smash_power: 1000000
 
-two:
+result_fight2:
   user_id: 1
   my_fighter: 1
-  rival_fighter: 1
+  rival_fighter: 5
+  game_result: 2
+  global_smash_power: 500000
+
+result_fight3:
+  user_id: 2
+  my_fighter: 6
+  rival_fighter: 9
   game_result: 1
-  global_smash_power: 1
+  global_smash_power: 1000000
+
+result_fight4:
+  user_id: 2
+  my_fighter: 3
+  rival_fighter: 10
+  game_result: 1
+  global_smash_power: 3500000

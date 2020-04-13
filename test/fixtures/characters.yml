@@ -1,9 +1,400 @@
-# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+character1:
+  id: 1
+  name: マリオ
+  picture:
 
-one:
-  name: MyString
-  picture: MyString
+character2:
+  id: 2
+  name: ドンキーコング
+  picture:
 
-two:
-  name: MyString
-  picture: MyString
+character3:
+  id: 3
+  name: リンク
+  picture:
+
+character4:
+  id: 4
+  name: サムス
+  picture:
+
+character5:
+  id: 5
+  name: ダークサムス
+  picture:
+
+character6:
+  id: 6
+  name: ヨッシー
+  picture:
+
+character7:
+  id: 7
+  name: カービィ
+  picture:
+
+character8:
+  id: 8
+  name: フォックス
+  picture:
+
+character9:
+  id: 9
+  name: ピカチュウ
+  picture:
+
+character10:
+  id: 10
+  name: ルイージ
+  picture:
+
+character11:
+  id: 11
+  name: ネス
+  picture:
+
+character12:
+  id: 12
+  name: キャプテン・ファルコン
+  picture:
+
+character13:
+  id: 13
+  name: プリン
+  picture:
+
+character14:
+  id: 14
+  name: ピーチ
+  picture:
+
+character15:
+  id: 15
+  name: デイジー
+  picture:
+
+character16:
+  id: 16
+  name: クッパ
+  picture:
+
+character17:
+  id: 17
+  name: アイスクライマー
+  picture:
+
+character18:
+  id: 18
+  name: シーク
+  picture:
+
+character19:
+  id: 19
+  name: ゼルダ
+  picture:
+
+character20:
+  id: 20
+  name: ドクターマリオ
+  picture:
+
+character21:
+  id: 21
+  name: ピチュー
+  picture:
+
+character22:
+  id: 22
+  name: ファルコ
+  picture:
+
+character23:
+  id: 23
+  name: マルス
+  picture:
+
+character24:
+  id: 24
+  name: ルキナ
+  picture:
+
+character25:
+  id: 25
+  name: こどもリンク
+  picture:
+
+character26:
+  id: 26
+  name: ガノンドロフ
+  picture:
+
+character27:
+  id: 27
+  name: ミュウツー
+  picture:
+
+character28:
+  id: 28
+  name: ロイ
+  picture:
+
+character29:
+  id: 29
+  name: クロム
+  picture:
+
+character30:
+  id: 30
+  name: Mr.ゲーム＆ウォッチ
+  picture:
+
+character31:
+  id: 31
+  name: メタナイト
+  picture:
+
+character32:
+  id: 32
+  name: ピット
+  picture:
+
+character33:
+  id: 33
+  name: ブラックピット
+  picture:
+
+character34:
+  id: 34
+  name: ゼロスーツサムス
+  picture:
+
+character35:
+  id: 35
+  name: ワリオ
+  picture:
+
+character36:
+  id: 36
+  name: スネーク
+  picture:
+
+character37:
+  id: 37
+  name: アイク
+  picture:
+
+character38:
+  id: 38
+  name: ポケモントレーナー
+  picture:
+
+character39:
+  id: 39
+  name: ディディーコング
+  picture:
+
+character40:
+  id: 40
+  name: リュカ
+  picture:
+
+character41:
+  id: 41
+  name: ソニック
+  picture:
+
+character42:
+  id: 42
+  name: デデデ
+  picture:
+
+character43:
+  id: 43
+  name: ピクミン＆オリマー
+  picture:
+
+character44:
+  id: 44
+  name: ルカリオ
+  picture:
+
+character45:
+  id: 45
+  name: ロボット
+  picture:
+
+character46:
+  id: 46
+  name: トゥーンリンク
+  picture:
+
+character47:
+  id: 47
+  name: ウルフ
+  picture:
+
+character48:
+  id: 48
+  name: むらびと
+  picture:
+
+character49:
+  id: 49
+  name: ロックマン
+  picture:
+
+character50:
+  id: 50
+  name: Wii Fit トレーナー
+  picture:
+
+character51:
+  id: 51
+  name: ロゼッタ＆チコ
+  picture:
+
+character52:
+  id: 52
+  name: リトル・マック
+  picture:
+
+character53:
+  id: 53
+  name: ゲッコウガ
+  picture:
+
+character54:
+  id: 54
+  name: Miiファイター 格闘
+  picture:
+
+character55:
+  id: 55
+  name: Miiファイター 剣術
+  picture:
+
+character56:
+  id: 56
+  name: Miiファイター 射撃
+  picture:
+
+character57:
+  id: 57
+  name: パルテナ
+  picture:
+
+character58:
+  id: 58
+  name: パックマン
+  picture:
+
+character59:
+  id: 59
+  name: ルフレ
+  picture:
+
+character60:
+  id: 60
+  name: シュルク
+  picture:
+
+character61:
+  id: 61
+  name: クッパJr.
+  picture:
+
+character62:
+  id: 62
+  name: ダックハント
+  picture:
+
+character63:
+  id: 63
+  name: リュウ
+  picture:
+
+character64:
+  id: 64
+  name: ケン
+  picture:
+
+character65:
+  id: 65
+  name: クラウド
+  picture:
+
+character66:
+  id: 66
+  name: カムイ
+  picture:
+
+character67:
+  id: 67
+  name: ベヨネッタ
+  picture:
+
+character68:
+  id: 68
+  name: インクリング
+  picture:
+
+character69:
+  id: 69
+  name: リドリー
+  picture:
+
+character70:
+  id: 70
+  name: シモン
+  picture:
+
+character71:
+  id: 71
+  name: リヒター
+  picture:
+
+character72:
+  id: 72
+  name: キングクルール
+  picture:
+
+character73:
+  id: 73
+  name: しずえ
+  picture:
+
+character74:
+  id: 74
+  name: ガオガエン
+  picture:
+
+character75:
+  id: 75
+  name: パックンフラワー
+  picture:
+
+character76:
+  id: 76
+  name: ジョーカー
+  picture:
+
+character77:
+  id: 77
+  name: 勇者
+  picture:
+
+character78:
+  id: 78
+  name: バンジョー＆カズーイ
+  picture:
+
+character79:
+  id: 79
+  name: テリー
+  picture:
+
+character80:
+  id: 80
+  name: ベレト / ベレス
+  picture:
+
