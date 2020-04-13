@@ -1,0 +1,8 @@
+p
+  strong Name:
+  = @character.name
+p
+  strong Picture:
+  = image_tag(@character.picture_url, width: 600) if @character.picture.present?
+= link_to 'Edit', edit_character_path(@character)
+= link_to 'Back', characters_path

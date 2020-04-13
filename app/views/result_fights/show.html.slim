@@ -1,0 +1,16 @@
+p#notice= notice
+p
+  strong 自分のキャラクター
+  = @result_fight.my_fighter
+p
+  strong 相手のキャラクター
+  = @result_fight.rival_fighter
+p
+  strong 勝敗
+  = @result_fight.game_result
+p
+  strong 世界戦闘力
+  = @result_fight.global_smash_power
+= link_to 'Edit', edit_result_fight_path(@result_fight)
+| \
+= link_to 'Back', result_fights_path

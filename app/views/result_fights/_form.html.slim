@@ -1,0 +1,27 @@
+= form_with(model: result_fight, local: true) do |form|
+  - if result_fight.errors.any?
+    #error_explanation
+      h2
+        = pluralize(result_fight.errors.count, "error")
+        | prohibited this result_fight from being saved:
+      ul
+        - result_fight.errors.full_messages.each do |message|
+          li= message
+  .field
+    = form.label :user_id
+    strong= current_user.email
+    = form.hidden_field :user_id, :value => current_user.id
+  .field
+    = form.label :my_fighter
+    = form.collection_select :my_fighter, Character.all, :id, :name
+  .field
+    = form.label :rival_fighter
+    = form.collection_select :rival_fighter, Character.all, :id, :name
+  .field
+    = form.label :game_result
+    = form.select :game_result, [['win', 1], ['lost', 2], ['even', 0]], {}, {id: "game_result"}
+  .field
+    = form.label :global_smash_power
+    = form.number_field :global_smash_power
+  .actions
+    = form.submit

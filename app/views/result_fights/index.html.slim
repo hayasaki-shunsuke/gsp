@@ -1,0 +1,21 @@
+p#notice= notice
+h1 世界戦闘力
+table
+  thead
+    tr
+      th 自分のキャラクター
+      th 相手のキャラクター
+      th 勝敗
+      th 世界戦闘力
+      th colspan="3"
+  tbody
+    - @result_fights.each do |result_fight|
+      tr
+        td= result_fight.my_fighter
+        td= result_fight.rival_fighter
+        td= result_fight.game_result
+        td= result_fight.global_smash_power
+        td= link_to 'Show', result_fight
+        td= link_to 'Edit', edit_result_fight_path(result_fight)
+        td= link_to 'Destroy', result_fight, method: :delete
+= link_to 'New Result Fight', new_result_fight_path
