@@ -1,6 +1,9 @@
 class ResultFightsController < ApplicationController
   before_action :set_result_fight, only: [:show, :edit, :update, :destroy]
 
+  helper_method :characterName
+  helper_method :showGameResult
+
   # GET /result_fights
   # GET /result_fights.json
   def index
@@ -58,6 +61,22 @@ class ResultFightsController < ApplicationController
     respond_to do |format|
       format.html { redirect_to result_fights_url, notice: 'Result fight was successfully destroyed.' }
       format.json { head :no_content }
+    end
+  end
+
+  def characterName(character_id)
+    @name = Character.find_by(id: character_id).name
+  end
+
+  def showGameResult(game_result)
+
+    case game_result
+    when 1
+      "Win"
+    when 2
+      "Lost"
+    else
+      "Even"
     end
   end
 

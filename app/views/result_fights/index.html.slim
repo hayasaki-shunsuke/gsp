@@ -11,11 +11,11 @@ table.table.table-hover
   tbody
     - @result_fights.each do |result_fight|
       tr
-        td= result_fight.my_fighter
-        td= result_fight.rival_fighter
-        td= result_fight.game_result
+        td= characterName(result_fight.my_fighter)
+        td= characterName(result_fight.rival_fighter)
+        td= showGameResult(result_fight.game_result)
         td= result_fight.global_smash_power
-        td= link_to 'Show', result_fight, class: 'btn btn-primary mr-3'
-        td= link_to 'Edit', edit_result_fight_path(result_fight), class: 'btn btn-primary mr-3'
-        td= link_to 'Destroy', result_fight, method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-danger mr-3'
-= link_to 'New Result Fight', new_result_fight_path
+        td= link_to '表示', result_fight, class: 'btn btn-primary mr-3'
+        td= link_to '編集', edit_result_fight_path(result_fight), class: 'btn btn-primary mr-3'
+        td= link_to '削除', result_fight, method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-danger mr-3'
+= link_to '世界戦闘力追加', new_result_fight_path, class: 'btn btn-primary mr-8'

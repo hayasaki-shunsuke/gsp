@@ -15,7 +15,7 @@ table.table.table-hover
       tr
         td= character.name
         td= character.picture
-        td= link_to 'Show', character, class: 'btn btn-primary mr-3'
-        td= link_to 'Edit', edit_character_path(character), class: 'btn btn-primary mr-3'
-        td= link_to 'Destroy', character, method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-danger mr-3'
-= link_to 'New Character', new_character_path
+        td= link_to '表示', character, class: 'btn btn-primary mr-3'
+        td= link_to '編集', edit_character_path(character), class: 'btn btn-primary mr-3'
+        td= link_to '削除', character, method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-danger mr-3'
+= link_to 'キャラクター追加', new_character_path
