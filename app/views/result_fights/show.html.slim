@@ -1,16 +1,18 @@
 p#notice= notice
-p
-  strong 自分のキャラクター
-  = @result_fight.my_fighter
-p
-  strong 相手のキャラクター
-  = @result_fight.rival_fighter
-p
-  strong 勝敗
-  = @result_fight.game_result
-p
-  strong 世界戦闘力
-  = @result_fight.global_smash_power
-= link_to 'Edit', edit_result_fight_path(@result_fight)
-| \
-= link_to 'Back', result_fights_path
+h1 世界戦闘力
+table.table.table-hover
+  thead.thead-default
+    tr
+      th 自分のキャラクター
+      th 相手のキャラクター
+      th 勝敗
+      th 世界戦闘力
+      th colspan="3"
+  tbody
+    tr
+      td= characterName(@result_fight.my_fighter)
+      td= characterName(@result_fight.rival_fighter)
+      td= showGameResult(@result_fight.game_result)
+      td= @result_fight.global_smash_power
+= link_to '編集', edit_result_fight_path(@result_fight), class: 'btn btn-primary mr-3'
+= link_to '戻る', result_fights_path, class: 'btn btn-primary mr-3'
