@@ -1,3 +1,3 @@
 # GSP
 
-Glabal Smash Power
+Global Smash Power
