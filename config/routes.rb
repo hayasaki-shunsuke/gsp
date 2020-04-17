@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get 'chart/index'
   resources :result_fights
   devise_for :users
   get 'pages/info'

@@ -24,17 +24,17 @@ html
         .collapse.navbar-collapse
           p.navbar-text.pull-right
             - if user_signed_in?
-              |  Logged in as
+              |  ユーザー名　
               strong
                 = current_user.email
               | .
-              = link_to 'Edit profile', edit_user_registration_path, class: 'navbar-link'
+              = link_to 'プロフィール編集', edit_user_registration_path, class: 'navbar-link'
               |  |
-              = link_to "Logout", destroy_user_session_path, method: :delete, class: 'navbar-link'
+              = link_to "ログアウト", destroy_user_session_path, method: :delete, class: 'navbar-link'
             - else
-              = link_to "Sign up", new_user_registration_path, class: 'navbar-link'
+              = link_to "サインアップ", new_user_registration_path, class: 'navbar-link'
               |  |
-              = link_to "Login", new_user_session_path, class: 'navbar-link'
+              = link_to "ログイン", new_user_session_path, class: 'navbar-link'
           ul.nav.navbar-nav
             li
               a[href="/characters"]
@@ -43,6 +43,10 @@ html
             li
               a[href="/result_fights"]
                 | 世界戦闘力
+          ul.nav.navbar-nav
+            li
+              a[href="/chart/index"]
+                | グラフ
     .container
       - if notice
         p.alert.alert-success
