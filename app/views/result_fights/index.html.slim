@@ -1,4 +1,22 @@
 h1 世界戦闘力
+= search_form_for @q, class: 'mb-5' do |f|
+  / .form-group.row
+    = f.label :my_fighter, '名称', class: 'col-sm-2 col-form-label'
+    .col-sm-10
+      = f.search_field :my_fighter, class: 'form-control'
+  .form-group.row
+    = f.label :created_at_gteq, '登録日時', class: 'col-sm-2 col-form-label'
+    .col-sm-10
+      = f.search_field :created_at_gteq, class: 'form-control'
+  .form-group
+    = f.submit class: 'btn btn-outline-primary'
+
+= link_to '世界戦闘力追加', new_result_fight_path, class: 'btn btn-primary mr-8'
+
+/ .mb-3
+  = paginate @result_fights
+  = page_entries_info @result_fights
+
 table.table.table-hover
   thead.thead-default
     tr

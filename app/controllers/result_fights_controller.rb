@@ -7,7 +7,8 @@ class ResultFightsController < ApplicationController
   # GET /result_fights
   # GET /result_fights.json
   def index
-    @result_fights = ResultFight.where(user_id: current_user.id)
+    @q = current_user.result_fight.ransack(params[:q])
+    @result_fights = @q.result(distinct: true)
   end
 
   # GET /result_fights/1
@@ -83,7 +84,7 @@ class ResultFightsController < ApplicationController
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_result_fight
-      @result_fight = ResultFight.find(params[:id])
+      @result_fight = current_user.result_fight.find(params[:id])
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.
