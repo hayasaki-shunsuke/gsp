@@ -8,7 +8,7 @@ class ResultFightsController < ApplicationController
   # GET /result_fights.json
   def index
     @q = current_user.result_fight.ransack(params[:q])
-    @result_fights = @q.result(distinct: true)
+    @result_fights = @q.result(distinct: true).page(params[:page])
   end
 
   # GET /result_fights/1

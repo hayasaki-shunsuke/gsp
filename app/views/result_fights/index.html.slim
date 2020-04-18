@@ -13,9 +13,9 @@ h1 世界戦闘力
 
 = link_to '世界戦闘力追加', new_result_fight_path, class: 'btn btn-primary mr-8'
 
-/ .mb-3
+.mb-3
   = paginate @result_fights
-  = page_entries_info @result_fights
+  / = page_entries_info @result_fights
 
 table.table.table-hover
   thead.thead-default
